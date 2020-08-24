@@ -16,4 +16,4 @@ docker run -dit \
 	--restart=always \
 	-v $(pwd)/environment:/lib/systemd/system/environment \
 	-v /sys/fs/cgroup:/sys/fs/cgroup:ro \
-	duckdns-updater:latest
+	adiprint/duckdns-updater:latest
