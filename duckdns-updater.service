@@ -1,0 +1,12 @@
+[Unit]
+Description=DUCKDNS updater
+
+[Service]
+Type=oneshot
+EnvironmentFile=/lib/systemd/system/environment
+ExecStart=/bin/updater.sh
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

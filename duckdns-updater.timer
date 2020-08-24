@@ -1,0 +1,12 @@
+[Unit]
+Description=DUCKDNS updater timer
+
+[Timer]
+OnUnitActiveSec=30s
+OnBootSec=15s
+AccuracySec=1us
+Unit=duckdns-updater.service
+
+
+[Install]
+WantedBy=timers.target
